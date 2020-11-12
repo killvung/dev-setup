@@ -172,6 +172,7 @@ brew cask install --appdir="/Applications" android-file-transfer
 brew cask install --appdir="/Applications" intellij-idea
 brew cask install --appdir="/Applications" intellij-idea-ce
 brew cask install --appdir="/Applications" docker
+brew cask install --appdir="/Applications" unshaky
 
 # Install Android dev
 brew cask install --appdir="~/Applications" android-studio
