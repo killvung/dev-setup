@@ -19,7 +19,7 @@ fi
 brew update
 
 # Upgrade any already-installed formulae.
-brew upgrade --all
+brew upgrade
 
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -54,6 +54,16 @@ brew install narwhal
 # Install Python
 brew install python
 brew install python3
+
+# Install Java
+brew tap adoptopenjdk/openjdk
+brew cask install --appdir="~/Applications" adoptopenjdk11
+brew cask install --appdir="~/Applications" adoptopenjdk13
+brew cask install --appdir="~/Applications" adoptopenjdk15
+
+# Other programming languages
+brew install rust
+brew install go
 
 # Install ruby-build and rbenv
 brew install ruby-build
@@ -99,11 +109,12 @@ brew install tcptrace
 brew install ucspi-tcp # `tcpserver` etc.
 brew install homebrew/x11/xpdf
 brew install xz
+brew install opencv
 
 # Install other useful binaries.
 brew install ack
 brew install dark-mode
-#brew install exiv2
+brew install exiv2
 brew install git
 brew install git-lfs
 brew install git-flow
@@ -137,34 +148,34 @@ heroku update
 
 # Core casks
 brew cask install --appdir="/Applications" alfred
-brew cask install --appdir="~/Applications" iterm2
-brew cask install --appdir="~/Applications" java
 brew cask install --appdir="~/Applications" xquartz
 
 # Development tool casks
 brew cask install --appdir="/Applications" sublime-text
-brew cask install --appdir="/Applications" atom
+brew cask install --appdir="/Applications" visual-studio-code
 brew cask install --appdir="/Applications" virtualbox
 brew cask install --appdir="/Applications" vagrant
-brew cask install --appdir="/Applications" macdown
 
 # Misc casks
 brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" slack
+brew cask install --appdir="/Applications" discord
 brew cask install --appdir="/Applications" dropbox
+brew cask install --appdir="/Applications" google-backup-and-sync
 brew cask install --appdir="/Applications" evernote
 brew cask install --appdir="/Applications" 1password
-#brew cask install --appdir="/Applications" gimp
-#brew cask install --appdir="/Applications" inkscape
+brew cask install --appdir="/Applications" gimp
+brew cask install --appdir="/Applications" inkscape
+brew cask install --appdir="/Applications" android-file-transfer
+brew cask install --appdir="/Applications" intellij-idea
+brew cask install --appdir="/Applications" intellij-idea-ce
+brew cask install --appdir="/Applications" docker
 
-#Remove comment to install LaTeX distribution MacTeX
-#brew cask install --appdir="/Applications" mactex
-
-# Install Docker, which requires virtualbox
-brew install docker
-brew install boot2docker
+# Install Android dev
+brew cask install --appdir="~/Applications" android-studio
+brew install android-sdk
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzip qlimagesize webpquicklook suspicious-package quicklookase qlvideo
