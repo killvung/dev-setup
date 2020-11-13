@@ -156,15 +156,21 @@ brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" evernote
 brew cask install --appdir="/Applications" 1password
-#brew cask install --appdir="/Applications" gimp
-#brew cask install --appdir="/Applications" inkscape
+brew cask install --appdir="/Applications" gimp
+brew cask install --appdir="/Applications" inkscape
+brew cask install --appdir="/Applications" android-file-transfer
+brew cask install --appdir="/Applications" docker
+brew cask install --appdir="/Applications" unshaky
 
-#Remove comment to install LaTeX distribution MacTeX
-#brew cask install --appdir="/Applications" mactex
+# Jetbrain products
+brew cask install --appdir="/Applications" intellij-idea
+brew cask install --appdir="/Applications" intellij-idea-ce
+brew cask install --appdir="/Applications" pycharm
+brew cask install --appdir="/Applications" clion
 
-# Install Docker, which requires virtualbox
-brew install docker
-brew install boot2docker
+# Install Android dev
+brew cask install --appdir="~/Applications" android-studio
+brew install android-sdk
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzip qlimagesize webpquicklook suspicious-package quicklookase qlvideo
