@@ -21,9 +21,13 @@ brew update
 # Install data stores
 brew install mysql
 brew install postgresql
-brew install mongo
 brew install redis
 brew install elasticsearch
+
+# Install MongoDB
+brew tap mongodb/brew
+brew install mongodb/brew/mongodb-community-shell
+brew install mongodb-community@4.4
 
 # Install mysql workbench
 # Install Cask
