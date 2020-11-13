@@ -172,6 +172,7 @@ brew cask install --appdir="/Applications" inkscape
 brew cask install --appdir="/Applications" android-file-transfer
 brew cask install --appdir="/Applications" docker
 brew cask install --appdir="/Applications" unshaky
+brew cask install --appdir="/Applications" wine-stable
 
 # Jetbrain products
 brew cask install --appdir="/Applications" intellij-idea
