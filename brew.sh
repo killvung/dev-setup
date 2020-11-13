@@ -160,6 +160,7 @@ brew cask install --appdir="/Applications" vagrant
 brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" skype
+brew cask install --appdir="/Applications" zoomus
 brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" discord
 brew cask install --appdir="/Applications" dropbox
