@@ -16,7 +16,7 @@ easy_install pip
 brew cask install --appdir="~/Applications" anaconda
 
 ###############################################################################
-# base virtual env
+# Anaconda Virtual Enviroment (base)
 ###############################################################################
 conda activate base
 conda install -y numpy
@@ -34,10 +34,9 @@ conda install -y Flask
 conda install -y Django
 conda install -y sqlalchemy
 conda install -y mysql-python
-# Create an virtual env specifically for tensorfow
 
 ###############################################################################
-# tensorflow virtual env
+# Anaconda Virtual Enviroment (tf)
 ###############################################################################
 conda create -n tf -y tensorflow
 conda activate tf
