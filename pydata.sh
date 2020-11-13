@@ -12,13 +12,18 @@ echo "Setting up pip."
 # Install pip
 easy_install pip
 
-# Install Anaconda because it's lit!
+# Install Anaconda
 brew cask install --appdir="~/Applications" anaconda
+/usr/local/anaconda3/bin/conda init bash
+
+# Restart bash
+bash
 
 ###############################################################################
 # Anaconda Virtual Enviroment (base)
 ###############################################################################
 conda activate base
+conda install -y pip
 conda install -y numpy
 conda install -y scipy
 conda install -y matplotlib
@@ -40,6 +45,7 @@ conda install -y mysql-python
 ###############################################################################
 conda create -n tf -y tensorflow
 conda activate tf
+conda install -y pip
 conda install -y numpy
 conda install -y scipy
 conda install -y matplotlib
