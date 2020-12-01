@@ -39,6 +39,7 @@ conda install -y Flask
 conda install -y Django
 conda install -y sqlalchemy
 conda install -y mysql-python
+conda install -y -c conda-forge fastapi
 
 ###############################################################################
 # Anaconda Virtual Enviroment (tf)
@@ -61,6 +62,7 @@ conda install -y Flask
 conda install -y Django
 conda install -y sqlalchemy
 conda install -y mysql-python
+conda install -y -c conda-forge fastapi
 
 ###############################################################################
 # Install IPython Profile
