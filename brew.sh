@@ -52,7 +52,6 @@ brew install ringojs
 brew install narwhal
 
 # Install Python
-brew install python
 brew install python3
 
 # Install Java
@@ -166,17 +165,16 @@ brew cask install --appdir="/Applications" discord
 brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" google-backup-and-sync
 brew cask install --appdir="/Applications" evernote
+brew cask install --appdir="/Applications" steam
 brew cask install --appdir="/Applications" 1password
 brew cask install --appdir="/Applications" gimp
 brew cask install --appdir="/Applications" inkscape
 brew cask install --appdir="/Applications" android-file-transfer
 brew cask install --appdir="/Applications" docker
 brew cask install --appdir="/Applications" unshaky
-brew cask install --appdir="/Applications" wine-stable
 
 # Jetbrain products
 brew cask install --appdir="/Applications" intellij-idea
-brew cask install --appdir="/Applications" intellij-idea-ce
 brew cask install --appdir="/Applications" pycharm
 brew cask install --appdir="/Applications" clion
 
