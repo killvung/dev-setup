@@ -16,8 +16,8 @@ brew install python3
 brew install --cask --appdir="/Applications" anaconda
 /usr/local/anaconda3/bin/conda init bash
 
-# Restart bash
-source ~/.bashrc
+echo "Reapply configuration for conda"
+source ~/.bash_profile
 
 ###############################################################################
 # Anaconda Virtual Enviroment (base)
@@ -42,11 +42,12 @@ conda install -y mysql-python
 conda install -y -c conda-forge fastapi
 
 ###############################################################################
-# Anaconda Virtual Enviroment (tf)
+# Anaconda Virtual Enviroment (Machine Learning)
 ###############################################################################
-conda create -n tf -y tensorflow
+conda create -n ml -y tensorflow
 conda activate tf
 conda install -y pip
+conda install -y pytorch
 conda install -y numpy
 conda install -y scipy
 conda install -y matplotlib
@@ -67,7 +68,6 @@ conda install -y -c conda-forge fastapi
 ###############################################################################
 # Install IPython Profile
 ###############################################################################
-
 echo "------------------------------"
 echo "Installing IPython Notebook Default Profile"
 

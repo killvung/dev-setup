@@ -42,9 +42,6 @@ sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
 # Change to the new shell, prompts for password
 chsh -s /usr/local/bin/bash
 
-# Install `wget` with IRI support.
-brew install wget
-
 # Install RingoJS and Narwhal.
 # Note that the order in which these are installed is important;
 # see http://git.io/brew-narwhal-ringo.
@@ -59,7 +56,9 @@ brew tap adoptopenjdk/openjdk
 brew install --cask --appdir="/Applications" adoptopenjdk11 adoptopenjdk13 adoptopenjdk15
 
 # Other programming languages
-brew install rust go
+brew install rust 
+brew install go
+brew install gcc
 
 # Install ruby-build and rbenv
 brew install ruby-build
@@ -68,7 +67,12 @@ LINE='eval "$(rbenv init -)"'
 grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
 
 # Install more recent versions of some OS X tools.
-brew install vim grep openssh screen
+brew install vim 
+brew install grep 
+brew install openssh 
+brew install screen 
+brew install openssl 
+brew install wget
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -124,6 +128,7 @@ brew install webkit2png
 brew install zopfli
 brew install pkg-config libffi
 brew install pandoc
+brew install kubernetes-cli
 
 # Lxml and Libxslt
 brew install libxml2

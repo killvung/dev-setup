@@ -19,7 +19,12 @@ fi
 brew update
 
 # Install data stores
-brew install mysql postgresql redis elasticsearch
+brew install mysql 
+brew install postgresql 
+brew install redis 
+brew install elasticsearch
+brew install cassandra
+brew install sqlite
 
 # Install MongoDB
 # https://stackoverflow.com/questions/57856809/installing-mongodb-with-homebrew
