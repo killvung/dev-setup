@@ -155,9 +155,12 @@ This repo takes a more **light-weight** approach to automation using a combinati
 
 ##### Clone the Repo
 
-    $ git clone https://github.com/donnemartin/dev-setup.git && cd dev-setup
+    $ git clone https://github.com/killvung/dev-setup.git && cd dev-setup
 
 ##### Run the .dots Script with Command Line Arguments
+
+##### For the lazy
+`git clone https://github.com/killvung/dev-setup.git && cd dev-setup && ./.dots all`
 
 **Since you probably don't want to install every section**, the `.dots` script supports command line arguments to run only specified sections.  Simply pass in the [scripts](#scripts) that you want to install.  Below are some examples.
 

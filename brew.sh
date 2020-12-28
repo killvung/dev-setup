@@ -72,7 +72,7 @@ brew install vim grep openssh screen
 
 # Install font tools.
 brew tap bramstein/webfonttools
-brew install sfnt2woff sfnt2woff-zopfli woff2rew 
+brew install sfnt2woff sfnt2woff-zopfli 
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 brew install aircrack-ng
