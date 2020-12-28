@@ -28,6 +28,7 @@ brew install mongodb-community
 
 # Install mysql workbench
 brew install --cask --appdir="/Applications" mysqlworkbench
+
 # Install pgadmin4
 brew install --cask --appdir="/Applications" pgadmin4
 

@@ -17,22 +17,52 @@ fi
 
 # Make sure we’re using the latest Homebrew.
 brew update
-brew install node deno hugo
 
-# Remove outdated versions from the cellar.
-brew cleanup
+# JavaScript runtime
+brew install node 
+brew install deno 
+
+# Static site generator
+brew install hugo
 
 # working with npm
-npm install -g yarn npx np npm-name-cli
+npm install -g yarn 
+npm install -g npx 
+npm install -g np 
+npm install -g npm-name-cli
 
 # web
-npm install -g express-generator yo
+npm install -g express-generator 
+npm install -g yo
 
 # debugging
 npm install -g ndb
 
 # general utilities
-npm install -g tldr now spoof fkill-cli castnow github-is-starred-cli vtop grunt-cli jshint pm2 react-native-cli
+npm install -g tldr 
+npm install -g now 
+npm install -g spoof 
+npm install -g fkill-cli 
+npm install -g castnow
+npm install -g github-is-starred-cli
+npm install -g vtop 
+npm install -g grunt-cli 
+npm install -g jshint
+npm install -g pm2 
+npm install -g react-native-cli
 
 # linting
-npm install -g eslint babel-eslint eslint-config-standard eslint-config-standard-react eslint-config-standard-jsx eslint-plugin-react eslint-config-prettier eslint-plugin-prettier prettier standard typescript
+npm install -g eslint 
+npm install -g babel-eslint 
+npm install -g eslint-config-standard 
+npm install -g eslint-config-standard-react 
+npm install -g eslint-config-standard-jsx 
+npm install -g eslint-plugin-react 
+npm install -g eslint-config-prettier 
+npm install -g eslint-plugin-prettier 
+npm install -g prettier 
+npm install -g standard 
+npm install -g typescript
+
+# Remove outdated versions from the cellar.
+brew cleanup
