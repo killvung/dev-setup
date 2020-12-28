@@ -40,6 +40,15 @@ function runDots() {
             echo ""
             ./brew.sh
         fi
+        if [ $ARG == "mainapps" ] || [ $ARG == "all" ]; then
+            echo ""
+            echo "------------------------------"
+            echo "Installing Homebrew common apps."
+            echo "This might take a while to complete, as some formulae need to be installed from source."
+            echo "------------------------------"
+            echo ""
+            ./mainapps.sh
+        fi
         if [ $ARG == "osx" ] || [ $ARG == "all" ]; then
             # Run the osx.sh Script
             # I strongly suggest you read through the commented osx.sh

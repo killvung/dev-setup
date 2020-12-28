@@ -43,7 +43,7 @@ sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
 chsh -s /usr/local/bin/bash
 
 # Install `wget` with IRI support.
-brew install wget --with-iri
+brew install wget
 
 # Install RingoJS and Narwhal.
 # Note that the order in which these are installed is important;
@@ -56,13 +56,10 @@ brew install python3
 
 # Install Java
 brew tap adoptopenjdk/openjdk
-brew cask install --appdir="~/Applications" adoptopenjdk11
-brew cask install --appdir="~/Applications" adoptopenjdk13
-brew cask install --appdir="~/Applications" adoptopenjdk15
+brew install --cask --appdir="/Applications" adoptopenjdk11 adoptopenjdk13 adoptopenjdk15
 
 # Other programming languages
-brew install rust
-brew install go
+brew install rust go
 
 # Install ruby-build and rbenv
 brew install ruby-build
@@ -71,17 +68,11 @@ LINE='eval "$(rbenv init -)"'
 grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
 
 # Install more recent versions of some OS X tools.
-brew install vim --override-system-vi
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
-brew install homebrew/php/php55 --with-gmp
+brew install vim grep openssh screen
 
 # Install font tools.
 brew tap bramstein/webfonttools
-brew install sfnt2woff
-brew install sfnt2woff-zopfli
-brew install woff2
+brew install sfnt2woff sfnt2woff-zopfli woff2rew 
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 brew install aircrack-ng
@@ -106,7 +97,6 @@ brew install tcpflow
 brew install tcpreplay
 brew install tcptrace
 brew install ucspi-tcp # `tcpserver` etc.
-brew install homebrew/x11/xpdf
 brew install xz
 brew install opencv
 
@@ -119,7 +109,7 @@ brew install git-lfs
 brew install git-flow
 brew install git-extras
 brew install hub
-brew install imagemagick --with-webp
+brew install imagemagick
 brew install lua
 brew install lynx
 brew install p7zip
@@ -140,50 +130,6 @@ brew install libxml2
 brew install libxslt
 brew link libxml2 --force
 brew link libxslt --force
-
-# Install Heroku
-brew install heroku/brew/heroku
-heroku update
-
-# Core casks
-brew cask install --appdir="/Applications" alfred
-brew cask install --appdir="~/Applications" xquartz
-
-# Development tool casks
-brew cask install --appdir="/Applications" sublime-text
-brew cask install --appdir="/Applications" visual-studio-code
-brew cask install --appdir="/Applications" virtualbox
-brew cask install --appdir="/Applications" vagrant
-
-# Misc casks
-brew cask install --appdir="/Applications" google-chrome
-brew cask install --appdir="/Applications" firefox
-brew cask install --appdir="/Applications" skype
-brew cask install --appdir="/Applications" zoomus
-brew cask install --appdir="/Applications" slack
-brew cask install --appdir="/Applications" discord
-brew cask install --appdir="/Applications" dropbox
-brew cask install --appdir="/Applications" google-backup-and-sync
-brew cask install --appdir="/Applications" evernote
-brew cask install --appdir="/Applications" steam
-brew cask install --appdir="/Applications" 1password
-brew cask install --appdir="/Applications" gimp
-brew cask install --appdir="/Applications" inkscape
-brew cask install --appdir="/Applications" android-file-transfer
-brew cask install --appdir="/Applications" docker
-brew cask install --appdir="/Applications" unshaky
-
-# Jetbrain products
-brew cask install --appdir="/Applications" intellij-idea
-brew cask install --appdir="/Applications" pycharm
-brew cask install --appdir="/Applications" clion
-
-# Install Android dev
-brew cask install --appdir="~/Applications" android-studio
-brew install android-sdk
-
-# Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzip qlimagesize webpquicklook suspicious-package quicklookase qlvideo
 
 # Remove outdated versions from the cellar.
 brew cleanup

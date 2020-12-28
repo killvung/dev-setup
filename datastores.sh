@@ -19,22 +19,17 @@ fi
 brew update
 
 # Install data stores
-brew install mysql
-brew install postgresql
-brew install redis
-brew install elasticsearch
+brew install mysql postgresql redis elasticsearch
 
 # Install MongoDB
+# https://stackoverflow.com/questions/57856809/installing-mongodb-with-homebrew
 brew tap mongodb/brew
-brew install mongodb/brew/mongodb-community-shell
-brew install mongodb-community@4.4
+brew install mongodb-community
 
 # Install mysql workbench
-# Install Cask
-brew install caskroom/cask/brew-cask
-brew cask install --appdir="/Applications" mysqlworkbench
+brew install --cask --appdir="/Applications" mysqlworkbench
 # Install pgadmin4
-brew cask install --appdir="/Applications" pgadmin4
+brew install --cask --appdir="/Applications" pgadmin4
 
 # Remove outdated versions from the cellar.
 brew cleanup

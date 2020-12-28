@@ -9,15 +9,15 @@ sudo -K
 echo "------------------------------"
 echo "Setting up pip."
 
-# Install pip
-easy_install pip
+# Install python and pip
+brew install python3
 
 # Install Anaconda
-brew cask install --appdir="~/Applications" anaconda
+brew install --cask --appdir="/Applications" anaconda
 /usr/local/anaconda3/bin/conda init bash
 
 # Restart bash
-bash
+source ~/.bashrc
 
 ###############################################################################
 # Anaconda Virtual Enviroment (base)
