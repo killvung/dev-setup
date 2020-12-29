@@ -26,8 +26,7 @@ brew install deno
 brew install hugo
 
 # working with npm
-npm install -g yarn 
-npm install -g npx 
+npm install -g yarn
 npm install -g np 
 npm install -g npm-name-cli
 
@@ -39,17 +38,8 @@ npm install -g yo
 npm install -g ndb
 
 # general utilities
-npm install -g tldr 
-npm install -g now 
-npm install -g spoof 
-npm install -g fkill-cli 
-npm install -g castnow
-npm install -g github-is-starred-cli
-npm install -g vtop 
-npm install -g grunt-cli 
 npm install -g jshint
 npm install -g pm2 
-npm install -g react-native-cli
 
 # linting
 npm install -g eslint 
