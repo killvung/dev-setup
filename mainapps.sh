@@ -48,6 +48,7 @@ brew install --cask --appdir="/Applications" android-file-transfer
 brew install --cask --appdir="/Applications" docker 
 brew install --cask --appdir="/Applications" unshaky 
 brew install --cask --appdir="/Applications" iina
+brew install --cask --appdir="/Applications" veracrypt
 
 # Jetbrain products
 brew install --cask --appdir="/Applications" intellij-idea 
