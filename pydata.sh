@@ -45,7 +45,7 @@ conda install -y -c conda-forge fastapi
 # Anaconda Virtual Enviroment (Machine Learning)
 ###############################################################################
 conda create -n ml -y tensorflow
-conda activate tf
+conda activate ml
 conda install -y pip
 conda install -y pytorch
 conda install -y numpy
